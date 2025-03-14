@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import HeaderComponent from "@/components/Header.component";
 import NavigationbarComponent from "@/components/Navigationbar.component";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const metadata: Metadata = {
   icons: "/ct_logo.png",
