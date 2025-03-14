@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   icons: "/ct_logo.png",
   title: "CT @SBTVC",
   description: "Computer Technology | Science-Based Technology Vocational College (Chonburi)",
+  other: {
+    "google-site-verification": "Ouy0dCDo-ijgMW6017hFxIgjxoW8vKYfn8WyJUolJW8",
+  }
 };
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
