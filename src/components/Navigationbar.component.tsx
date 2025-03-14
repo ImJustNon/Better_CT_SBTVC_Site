@@ -1,0 +1,72 @@
+import Image from "next/image";
+import React from "react";
+import ct_logo from "../assets/ct_logo.png";
+import sbtvc_logo from "../assets/sbtvc_logo.png";
+import { Menu } from "lucide-react";
+import Link from "next/link";
+
+export default function NavigationbarComponent({ className }: { className?: string }): React.JSX.Element {
+    return (
+        <>
+            <div className={`${className} w-full`}>
+                <div className="px-8 lg:px-0 container mx-auto max-w-6xl py-1.5 flex flex-row items-center duration-300">
+                    <Link href={"/"} className="flex flex-row gap-3 items-center">
+                        <Image className="h-[65px] w-fit py-1" src={ct_logo} alt="ct_logo" />
+                        <div className="w-[1px] bg-[#d0d0d0] h-12"></div>
+                        <Image className="h-[70px] w-fit py-1" src={sbtvc_logo} alt="sbtvc_logo" />
+                    </Link>
+                    <div className="hidden lg:flex grow text-sm flex-row items-center justify-end">
+                        <Link href={"/about"} className="flex flex-col group items-center px-3 duration-300">
+                            <div className="py-5 cursor-pointer">
+                                เกี่ยวกับ CT
+                            </div>
+                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
+                        </Link>
+                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
+                            <div className="py-5 cursor-pointer">
+                                วิลัยทัศน์เเละพันธกิจ
+                            </div>
+                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
+                        </Link>
+                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
+                            <div className="py-5 cursor-pointer">
+                                หลักสูตรการเรียนการสอน
+                            </div>
+                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
+                        </Link>
+                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
+                            <div className="py-5 cursor-pointer">
+                                บุคลากร
+                            </div>
+                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
+                        </Link>
+                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
+                            <div className="py-5 cursor-pointer">
+                                ทำเนียบรุ่น(ฐว.)
+                            </div>
+                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
+                        </Link>
+                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
+                            <div className="py-5 cursor-pointer">
+                                โครงงาน
+                            </div>
+                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
+                        </Link>
+                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
+                            <div className="py-5 cursor-pointer">
+                                กิจกรรมของแผนก
+                            </div>
+                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
+                        </Link>
+                        
+                    </div>
+                    <div className="flex lg:hidden grow flex-row items-center justify-end">
+                        <button className="p-5 cursor-pointer">
+                            <Menu size={35} />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}
