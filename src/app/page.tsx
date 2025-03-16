@@ -1,5 +1,7 @@
 "use-client"
 
+import FooterComponent from "@/components/Footer.component";
+import HeaderComponent from "@/components/Header.component";
 import NavigationbarComponent from "@/components/Navigationbar.component";
 import VideoBackgroundComponent from "@/components/VideoBackground.component";
 import { Search } from "lucide-react";
@@ -9,6 +11,7 @@ import Link from "next/link";
 export default function Home() {
   return (
       <>
+	  	<HeaderComponent />
         <div className="min-h-[95vh] flex flex-col relative">
 			<NavigationbarComponent className="absolute top-0 left-0 right-0 z-10 !text-white" />
 
@@ -31,6 +34,7 @@ export default function Home() {
 			</div>
 
         </div>
+		<FooterComponent />
       </>
   );
 }

@@ -14,7 +14,7 @@ export default function BreadcrumbComponent(): React.JSX.Element {
 
     return (
         <>
-            <div className="w-full flex py-4 bg-[#f3f3f3]">
+            <div className="w-full flex py-4 bg-[#f3f3f3] px-3.5 lg:px-0">
                 <div className="container mx-auto max-w-6xl flex flex-row items-center">
                     <Link href={"/"} className="text-sm mr-2 text-black hover:text-[#ff6a00] cursor-pointer">Home</Link>
                     {splitPathname.map((p: string, i: number) => {

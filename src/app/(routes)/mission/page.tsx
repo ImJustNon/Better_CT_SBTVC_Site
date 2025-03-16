@@ -11,7 +11,7 @@ export default function About(): React.JSX.Element {
   return (
       <>
         <div className="container mx-auto max-w-6xl">
-            asd
+            Mission
         </div>
       </>
   );
