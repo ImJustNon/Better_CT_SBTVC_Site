@@ -34,12 +34,6 @@ export default function NavigationbarComponent({ className }: { className?: stri
                         </div>
                         <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
                             <div className="py-5 cursor-pointer">
-                                วิลัยทัศน์เเละพันธกิจ
-                            </div>
-                            <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
-                        </Link>
-                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
-                            <div className="py-5 cursor-pointer">
                                 หลักสูตรการเรียนการสอน
                             </div>
                             <div className="h-[2px] bg-[#ff6a00] rounded-full w-0 group-hover:w-full duration-300"></div>
