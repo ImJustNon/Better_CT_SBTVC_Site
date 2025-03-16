@@ -1,4 +1,4 @@
-"use-client"
+"use client"
 
 import FooterComponent from "@/components/Footer.component";
 import HeaderComponent from "@/components/Header.component";
@@ -7,13 +7,52 @@ import VideoBackgroundComponent from "@/components/VideoBackground.component";
 import { Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import Headroom from "react-headroom";
 
 export default function Home() {
-  return (
+	const [headroomEvent, setHeadroomEvent] = useState<{
+		isPin: boolean;
+		isUnpin: boolean;
+		isUnfix: boolean;
+	}>({
+		isPin: false,
+		isUnpin: false,
+		isUnfix: true
+	});
+
+	useEffect(() =>{
+		console.log(headroomEvent);
+	}, [headroomEvent]);
+
+
+  	return (
       <>
-	  	<HeaderComponent />
+	  	<Headroom 
+			className={`relative z-20`} 
+			onPin={() => setHeadroomEvent((prev) => ({
+				isPin: true,
+				isUnpin: false,
+				isUnfix: false,
+			}))}
+			onUnpin={() => setHeadroomEvent((prev) => ({
+				isPin: false,
+				isUnpin: true,
+				isUnfix: false,
+			}))}
+			onUnfix={() => setHeadroomEvent((prev) => ({
+				isPin: false,
+				isUnpin: false,
+				isUnfix: true,
+			}))}
+		>
+	  		<HeaderComponent className={`relative z-20 ${headroomEvent.isPin ? "animate__animated animate__fadeIn animate__faster" : ""}`} />
+			<NavigationbarComponent className={`absolute z-20 duration-300 transition-all ease-in ${headroomEvent.isPin ? "animate__animated animate__fadeIn animate__faster bg-white !text-[#333] shadow-lg" : headroomEvent.isUnfix ? "bg-transparent !text-white" : `animate__animated animate__fadeOut animate__faster`}`} />
+		</Headroom>
+
+
         <div className="min-h-[95vh] flex flex-col relative">
-			<NavigationbarComponent className="absolute top-0 left-0 right-0 z-10 !text-white" />
+			{/* <NavigationbarComponent className="absolute top-0 left-0 right-0 z-10 !text-white" /> */}
 
 			<div className="relative flex-1">
 				{/* Gradient overlay for better text readability */}

@@ -19,7 +19,7 @@ export default function NavigationbarComponent({ className }: { className?: stri
                         <Image className="h-[70px] w-fit py-1" src={sbtvc_logo} alt="sbtvc_logo" />
                     </Link>
                     <div className="hidden lg:flex grow text-sm flex-row items-center justify-end">
-                        <div className="relative flex flex-row items-center px-3 group">
+                        <div className="relative flex flex-row items-center px-3 group ">
                             <div className="flex flex-col group items-center">
                                 <div className="py-5 cursor-pointer">
                                     เกี่ยวกับ CT

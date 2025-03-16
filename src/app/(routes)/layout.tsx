@@ -10,9 +10,9 @@ import Headroom from "react-headroom";
 export default function layout({children}: {children: React.ReactNode}): React.JSX.Element {
     return(
         <>
-            <Headroom>
+            <Headroom onPin={() => console.log("OnPin")} onUnfix={() => console.log("OnUnfix")} onUnpin={() => console.log("OnUnpin")}>
                 <HeaderComponent />
-                <NavigationbarComponent className="bg-white text-[#333] shadow-sm" />
+                <NavigationbarComponent className="bg-white !text-[#333] shadow-sm" />
             </Headroom>
             
             <BreadcrumbComponent />
