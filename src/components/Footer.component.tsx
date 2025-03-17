@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import TiktokIcon from "./icons/Tiktok.icon";
 import Image from "next/image";
-import ct_logo from "../assets/ct_logo.png";
+import ct_banner from "../assets/ct_banner.png";
 import { MailCheck, MapPin, Phone } from "lucide-react";
 
 export default function FooterComponent(): React.JSX.Element {
@@ -11,7 +11,7 @@ export default function FooterComponent(): React.JSX.Element {
             <div className="w-full flex flex-col justify-start bg-[#111111] pt-6">
                 <div className="container mx-auto max-w-6xl flex flex-col md:flex-row justify-start py-5 px-3.5 gap-8">
                     <div className="flex flex-col max-w-xs mb-8">
-                        <Image src={ct_logo} alt="ct_logo" className="h-16 w-fit mb-7" />
+                        <Image src={ct_banner} alt="ct_logo" className="h-16 w-fit mb-7" />
                         <div className="flex flex-row items-center py-2">
                             <div className="w-[20px]">
                                 <Phone className="text-[#ff6a00]" size={16} />
