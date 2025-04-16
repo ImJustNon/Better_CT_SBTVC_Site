@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import FooterComponent from "@/components/Footer.component";
 import HeaderComponent from "@/components/Header.component";
