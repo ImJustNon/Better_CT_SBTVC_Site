@@ -47,13 +47,13 @@ export default function FooterComponent(): React.JSX.Element {
                     </div>
                     <div className="flex flex-col mb-2">
                         <div className="text-white text-lg font-extrabold mb-7">หลักสูตรการศึกษา</div>
-                        <Link href={"#"} target="_blank" className="text-[#999999] hover:text-[#ff6a00] duration-300 text-md">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</Link>
                         <Link href={"#"} target="_blank" className="text-[#999999] hover:text-[#ff6a00] duration-300 mt-4 text-md">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</Link>
+                        <Link href={"#"} target="_blank" className="text-[#999999] hover:text-[#ff6a00] duration-300 text-md">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</Link>
                     </div>
                     <div className="flex flex-col mb-2">
                         <div className="text-white text-lg font-extrabold mb-7">สมัครเรียน</div>
-                        <Link href={"#"} target="_blank" className="text-[#999999] hover:text-[#ff6a00] duration-300 text-md">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</Link>
                         <Link href={"#"} target="_blank" className="text-[#999999] hover:text-[#ff6a00] duration-300 mt-4 text-md">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</Link>
+                        <Link href={"#"} target="_blank" className="text-[#999999] hover:text-[#ff6a00] duration-300 text-md">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</Link>
                     </div>
                 </div>
                 
