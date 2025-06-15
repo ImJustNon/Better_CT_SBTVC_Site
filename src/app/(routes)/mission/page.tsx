@@ -1,4 +1,4 @@
-"use-client"
+"use client"
 
 import NavigationbarComponent from "@/components/Navigationbar.component";
 import VideoBackgroundComponent from "@/components/VideoBackground.component";
