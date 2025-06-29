@@ -62,12 +62,12 @@ export default function Home() {
 
 				<div className="absolute inset-0 bg-black/20">
 					<div className="container h-full mx-auto max-w-6xl flex flex-col justify-center lg:pl-16 scale-75 lg:scale-100">
-						<div className="text-xl font-semibold text-white">Computer Technology</div>
-						<div className="text-7xl font-extrabold text-white mt-1.5">CT SBTVC</div>
+						<div className="text-xl font-semibold text-white">Department of Computer Technology</div>
+						<div className="text-7xl font-extrabold text-white mt-3">CT SBTVC</div>
 						<div className="text-xl font-normal text-white mt-1.5">แผนกเทคโนโลยีคอมพิวเตอร์ ฐานวิทยาศาสตร์ชลบุรี</div>
-						<button className="mt-3 px-10 py-3 font-normal text-lg text-white bg-[#ff6a00] hover:bg-[#ff8630] active:bg-[#fbaa71] rounded-sm w-fit cursor-pointer duration-300">
+						<Link href={"/apply"} className="mt-5 px-10 py-3 font-normal text-lg text-white bg-[#ff6a00] hover:bg-[#ff8630] active:bg-[#fbaa71] rounded-md w-fit cursor-pointer duration-300">
 							สมัครเข้าศึกษาต่อ
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

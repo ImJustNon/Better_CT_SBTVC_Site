@@ -39,7 +39,7 @@ export default function NavigationbarComponent({ className }: { className?: stri
                                 <Link href={"/mission"} className="block pl-7 pt-2 pb-5 text-black hover:text-[#ff6a00] duration-300">วิสัยทัศน์และพันธกิจ</Link>
                             </div>
                         </div>
-                        <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
+                        <Link href={"/apply"} className="flex flex-col group items-center px-3 duration-300">
                             <div className="py-5 cursor-pointer">
                                 สมัครเรียน
                             </div>
@@ -54,8 +54,8 @@ export default function NavigationbarComponent({ className }: { className?: stri
                             </div>
                             <ChevronDown size={15} strokeWidth={3} className="mb-1 ml-2" />
                             <div className="absolute top-[70px] left-0 w-72 bg-[#ffff] shadow-lg rounded-sm z-10 flex flex-col overflow-visible transition-all duration-300 origin-top transform opacity-0 invisible scale-y-95 -translate-y-2 max-h-0 group-hover:opacity-100 group-hover:visible group-hover:scale-y-100 group-hover:translate-y-0 group-hover:max-h-screen">
-                                <Link href={"/history"} className="block pl-7 pt-5 pb-2 text-black hover:text-[#ff6a00] duration-300">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</Link>
-                                <Link href={"/mission"} className="block pl-7 pt-2 pb-5 text-black hover:text-[#ff6a00] duration-300">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</Link>
+                                <Link href={"/voccert"} className="block pl-7 pt-5 pb-2 text-black hover:text-[#ff6a00] duration-300">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</Link>
+                                <Link href={"/high-voccert"} className="block pl-7 pt-2 pb-5 text-black hover:text-[#ff6a00] duration-300">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</Link>
                             </div>
                         </div>
                         <Link href={"/#"} className="flex flex-col group items-center px-3 duration-300">
